@@ -1,0 +1,222 @@
+/*
+- Portfolio Page for Marvin Adorian Zanchi 
+- Created by: Marvin Adorian Zanchi 
+- First Date: 22/04/22
+- Description: This CSS file contains the styles for layout, typography, colors, and responsiveness
+- Sections include: Header, My Skills, About Me, Projects, Contact Info, and Footer
+*/
+
+/* GENERAL SECTION */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    letter-spacing: 1px;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contact button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #2ce602e1;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.title{
+    padding: 50px 0;
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.title span{
+    color:#00ff08;
+}
+
+/* HEADER SECTION*/
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(121, 121, 121);
+    text-decoration: none; /*remove underline*/
+    display: inline-block; /* allows the hover transition*/
+    transition: .2s; /* transition delay*/
+}
+
+header a:hover{
+    color: white;
+    transform: scale(1.07);
+}
+
+header nav ul{
+    list-style-type: none; /*remove bullet points*/
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contact button:hover{
+    box-shadow: 0px 0px 8px #5aaa20;
+    transform: scale(1.05);
+}
+
+/* BANNER SECTION*/
+section.top-site{
+    padding: 40px 4%;
+}
+
+section.top-site .flex{
+    align-items: center;
+    justify-content:space-between;
+    gap: 60px;
+}
+
+.top-site h1{
+    color: white;
+    font-size: 42px;
+    line-height: 60px;
+}
+
+.top-site h1 span{
+    font-size: 25px;
+}
+
+.top-site h2{
+    color: white;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 60px;
+}
+
+.top-site .txt-top-site h2 span{
+    color: #00ff08;
+}
+
+.top-site h3{
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 60px;
+    padding-bottom: 40px;
+}
+
+.top-site .txt-top-site h3 span{
+    font-size: 30px;
+    color: #00ff08;
+}
+
+.top-site .img-top-site img{
+    position:relative;
+    animation: floating 2s ease-in-out infinite alternate;
+}
+
+@keyframes floating{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* SKILLS SECTION*/
+section.skills{
+    padding: 80px 4%;
+}
+
+section.skills .flex{
+    gap: 60px;
+}
+
+.skills .skills-box{
+    flex-basis: 100%;
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.skills .skills-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.568);
+}
+
+.skills .skills-box h3{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    margin: 10px 0 10px;
+}
+
+/* ABOUT SECTION*/
+section.about{
+    padding: 80px 4%;
+}
+
+section.about .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.about .img-about img{
+    border-radius: 20px;
+    width: 300px;
+    height: 500px;
+}
+
+.about .txt-about p{
+    color: white;
+    margin: 20px 0;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+.about .txt-about .btn-social button{
+    background-color:#00ff08d7;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 5px 3px;
+}
+
+.about .txt-about .btn-social button img{
+    max-width: 100%;
+}
+
+.btn-social button:hover{
+    box-shadow: 0px 0px 8px #5aaa20;
+    transform: scale(1.05);
+}
+
+
+
