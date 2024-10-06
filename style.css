@@ -7,120 +7,189 @@
 */
 
 /* GENERAL SECTION */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: black;
     height: 100vh;
     letter-spacing: 1px;
 }
 
-.interface{
+.interface {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.btn-contact button{
+.btn-contact button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #2ce602e1;
+    background-color: #00ff08;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
 }
 
-h2.title{
+h2.title {
     padding: 50px 0;
     color: white;
     font-size: 38px;
     text-align: center;
 }
 
-h2.title span{
-    color:#00ff08;
+h2.title span {
+    color: #00ff08;
 }
 
 /* HEADER SECTION*/
-header{
+header {
     padding: 40px 4%;
 }
 
-header > .interface{
+header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header a{
+header a {
     color: rgb(121, 121, 121);
-    text-decoration: none; /*remove underline*/
-    display: inline-block; /* allows the hover transition*/
-    transition: .2s; /* transition delay*/
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
 }
 
-header a:hover{
+header nav.menu-desktop a:hover {
     color: white;
     transform: scale(1.07);
 }
 
-header nav ul{
-    list-style-type: none; /*remove bullet points*/
+header nav ul {
+    list-style-type: none;
 }
 
-header nav ul li{
+header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
 
-.btn-contact button:hover{
+.btn-contact button:hover,
+form .btn-send input:hover {
     box-shadow: 0px 0px 8px #5aaa20;
     transform: scale(1.05);
 }
 
+/* MOBILE MENU SECTION*/
+.btn-open-menu{
+    display: none;
+}
+
+.btn-open-menu i {
+    color: #00ff08;
+    font-size: 40px;
+    padding-right: 20px;
+}
+.menu-mobile {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.open-menu {
+    width: 70%;
+}
+
+.menu-mobile.open-menu ~ .overlay-menu {
+    display: block;
+}
+
+.menu-mobile .btn-close {
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-close i {
+    color: #00ff08;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: #00ff08;
+    color: black;
+    font-weight: 400;
+}
+
+.overlay-menu {
+    background-color: rgba(0, 0, 0, 0.692);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
 /* BANNER SECTION*/
-section.top-site{
+section.top-site {
     padding: 40px 4%;
 }
 
-section.top-site .flex{
+section.top-site .flex {
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     gap: 60px;
 }
 
-.top-site h1{
+.top-site h1 {
     color: white;
     font-size: 42px;
     line-height: 60px;
 }
 
-.top-site h1 span{
+.top-site h1 span {
     font-size: 25px;
 }
 
-.top-site h2{
+.top-site h2 {
     color: white;
     font-size: 32px;
     font-weight: 300;
     line-height: 60px;
 }
 
-.top-site .txt-top-site h2 span{
+.top-site .txt-top-site h2 span {
     color: #00ff08;
 }
 
-.top-site h3{
+.top-site h3 {
     color: white;
     font-size: 22px;
     font-weight: 400;
@@ -128,35 +197,36 @@ section.top-site .flex{
     padding-bottom: 40px;
 }
 
-.top-site .txt-top-site h3 span{
+.top-site .txt-top-site h3 span {
     font-size: 30px;
     color: #00ff08;
 }
 
-.top-site .img-top-site img{
-    position:relative;
+.top-site .img-top-site img {
+    position: relative;
     animation: floating 2s ease-in-out infinite alternate;
 }
 
-@keyframes floating{
-    0%{
+@keyframes floating {
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
 
 /* SKILLS SECTION*/
-section.skills{
+section.skills {
     padding: 80px 4%;
 }
 
-section.skills .flex{
+section.skills .flex {
     gap: 60px;
 }
 
-.skills .skills-box{
+.skills .skills-box {
     flex-basis: 100%;
     color: white;
     padding: 40px;
@@ -165,42 +235,44 @@ section.skills .flex{
     transition: .2s;
 }
 
-.skills .skills-box:hover{
+.skills .skills-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.568);
 }
 
-.skills .skills-box h3{
+.skills .skills-box h3 {
     color: rgb(255, 255, 255);
     font-size: 28px;
     margin: 10px 0 10px;
 }
 
 /* ABOUT SECTION*/
-section.about{
+section.about {
     padding: 80px 4%;
 }
 
-section.about .flex{
+section.about .flex {
     align-items: center;
     gap: 60px;
+    margin: 40px 0 40px;
 }
 
-.about .img-about img{
+.about .img-about img {
     border-radius: 20px;
     width: 300px;
     height: 500px;
 }
 
-.about .txt-about p{
+.about .txt-about p {
     color: white;
     margin: 20px 0;
     padding-right: 40px;
     text-align: justify;
 }
 
-.about .txt-about .btn-social button{
-    background-color:#00ff08d7;
+/* SOCIAL MEDIA BUTTONS SECTION*/
+.btn-social button {
+    background-color: #00ff08;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -209,14 +281,264 @@ section.about .flex{
     margin: 5px 3px;
 }
 
-.about .txt-about .btn-social button img{
+.btn-social button img {
     max-width: 100%;
 }
 
-.btn-social button:hover{
+.btn-social button:hover {
     box-shadow: 0px 0px 8px #5aaa20;
     transform: scale(1.05);
 }
 
 
+/* PROJECT SECTION*/
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.103);
+}
 
+section.portfolio .flex {
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: #00ff08;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 25px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000007c;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* FORM SECTION*/
+section.form {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: rgb(61, 59, 59);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.726);
+}
+
+form textarea {
+    resize: none;
+    max-height: 250px;
+}
+
+form .btn-send {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-send input {
+    width: 200px;
+    background-color: #00ff08d7;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form .btn-send input {
+    width: 200px;
+    background-color: #00ff08;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* FOOTER SECTION*/
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.103);
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+    border-bottom: 2px;
+}
+
+.border {
+    border-top: 2px solid #00ff08;
+}
+
+footer .line-footer p i {
+    color: #00ff08;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: white;
+}
+
+/* RESPONSIVE SECTION*/
+@media screen and (max-width: 1120px) {
+
+    /* GENERAL */
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.title {
+        font-size: 30px;
+        
+    }
+
+    /* HEADER SECTION*/
+    .menu-desktop, .btn-contact {
+        display: none;
+    }
+
+    .btn-open-menu{
+        display: block;
+    }
+
+    /* BANNER SECTION*/
+    section.top-site .flex {
+        gap: 0px;
+    }
+
+    section.top-site {
+        padding: 20px 4%;
+    }
+
+    .top-site h1 {
+        font-size: 28px;
+        line-height: 50px;
+        color: #00ff08;
+    }
+
+    .top-site h2 {
+        font-size: 22px;
+    }
+
+    .top-site h3 {
+        font-size: 20px;
+    }
+
+    .top-site .txt-top-site h3 span {
+        color: white;
+        font-size: 20px;
+    }
+
+    .top-site .img-top-site img {
+        width: 100%;
+    }
+
+    /* SKILLS SECTION*/
+    section.skills {
+        padding: 20px 8%;
+    }
+
+    /* ABOUT SECTION*/
+    section.about {
+        padding: 40px 8%;
+    }
+    section.about .flex {
+        flex-direction: column-reverse;
+    }
+    .about .txt-about p {
+        padding: 0%;
+        text-align: justify;
+    }
+
+    .about .btn-social{
+        padding-top: 25px;
+        text-align: center;    
+    }
+
+    .about .img-about img {
+        max-height: 420px;
+    }
+
+    /* PROJECT SECTION*/
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    /* FORM SECTION*/
+    section.form {
+        padding: 80px 6%;
+    }
+    
+
+    /* FOOTER SECTION*/
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 12px; /* Or 13px, 14px depending on preference */
+        color: whitesmoke; /* A neutral gray color, adjustable to fit your site's theme */
+        text-align: center; /* Center it in the footer for balance */
+        margin: 10px 0; /* Some space around the text */
+      }
+      
+}
