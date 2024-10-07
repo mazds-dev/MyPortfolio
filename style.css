@@ -62,13 +62,6 @@ header>.interface {
     justify-content: space-between;
 }
 
-header>.thanks h1, h2, h3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-}
-
 header>.thanks h1 span {
     color: #00ff08;
 }
