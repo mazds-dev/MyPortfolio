@@ -162,13 +162,21 @@
         <section class="form">
             <div class="interface">
                 <h2 class="title">CONTACT <span>ME</span></h2>
-                <form action="">
-                    <input type="text" value="" placeholder="Full name:" required>
-                    <input type="text" value="" placeholder="Email:" required>
-                    <input type="text"  value="" placeholder="Phone:">
-                    <textarea id="" placeholder="Message:" required></textarea>
+
+                <form action="https://formsubmit.co/mazds.dev@gmail.com" method="POST">
+
+                    <input class="input" type="text" id="name" name="name" placeholder="Full name:" autocomplete="off" required>
+                    <!--<label for="name">Fname</label>-->
+
+                    <input class="input" type="text" id="email" name="email" placeholder="Email:" autocomplete="off"required>
+                    
+                    <input class="input" type="text" id="phone" name="phone" value="" placeholder="Phone: (optional)">
+
+                    <textarea class="input" id="message" name="message" placeholder="Message:" required></textarea>
+                    
                     <div class="btn-send"><input type="submit" value="SEND"></div>
                 </form>
+
             </div><!--interface-->
         </section><!--form-->
     </main>
