@@ -1,12 +1,12 @@
 /*
-- Portfolio Page for Marvin Adorian Zanchi 
-- Created by: Marvin Adorian Zanchi 
-- First Date: 22/04/22
-- Description: This CSS file contains the styles for layout, typography, colors, and responsiveness
-- Sections include: Header, My Skills, About Me, Projects, Contact Info, and Footer
+* Portfolio Page for Marvin A. Zanchi 
+* Description: This CSS file contains the styles for layout, typography, colors, and responsiveness
+* Sections include: Header, My Skills, About Me, Projects, Contact Info, and Footer
+* Last Update: 10/10/22
 */
 
-/* GENERAL SECTION */
+
+/* ================= GENERAL SECTION ================= */
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #00ff08;
+    background-color: #93ff40;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
@@ -48,10 +48,10 @@ h2.title {
 }
 
 h2.title span {
-    color: #00ff08;
+    color: #93ff40;
 }
 
-/* HEADER SECTION*/
+/* ================= HEADER SECTION ================= */
 header {
     padding: 40px 4%;
 }
@@ -62,10 +62,11 @@ header>.interface {
     justify-content: space-between;
 }
 
+/* *********************************************************************
 header>.thanks h1 span {
-    color: #00ff08;
+    color: #93ff40;
 }
-
+*/
 header a {
     color: rgb(121, 121, 121);
     text-decoration: none;
@@ -93,13 +94,13 @@ form .btn-send input:hover {
     transform: scale(1.05);
 }
 
-/* MOBILE MENU SECTION*/
+/* ================= MOBILE MENU SECTION =================*/
 .btn-open-menu{
     display: none;
 }
 
 .btn-open-menu i {
-    color: #00ff08;
+    color: #93ff40;
     font-size: 40px;
     padding-right: 20px;
 }
@@ -128,7 +129,7 @@ form .btn-send input:hover {
 }
 
 .menu-mobile .btn-close i {
-    color: #00ff08;
+    color: #93ff40;
     font-size: 30px;
 }
 
@@ -145,7 +146,7 @@ form .btn-send input:hover {
 }
 
 .menu-mobile nav ul li a:hover {
-    background-color: #00ff08;
+    background-color: #93ff40;
     color: black;
     font-weight: 400;
 }
@@ -161,7 +162,7 @@ form .btn-send input:hover {
     display: none;
 }
 
-/* BANNER SECTION*/
+/* ================= BANNER SECTION ================= */
 section.top-site {
     padding: 40px 4%;
 }
@@ -190,7 +191,7 @@ section.top-site .flex {
 }
 
 .top-site .txt-top-site h2 span {
-    color: #00ff08;
+    color: #93ff40;
 }
 
 .top-site h3 {
@@ -203,7 +204,7 @@ section.top-site .flex {
 
 .top-site .txt-top-site h3 span {
     font-size: 30px;
-    color: #00ff08;
+    color: #93ff40;
 }
 
 .top-site .img-top-site img {
@@ -221,7 +222,42 @@ section.top-site .flex {
     }
 }
 
-/* SKILLS SECTION*/
+/* ================= THANKS PAGE SECTION ================= */
+
+/* Center the logo container on the thanks page */
+.thanks-page .interface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks-page .logo img {
+    max-width: 150px; /* Adjust the logo size as needed */
+}
+
+/* Center align and style the text */
+.thanks-page .top-site {
+    text-align: center;
+    padding: 40px 4%;
+}
+
+/* Change H1 color to green */
+.thanks-page h1 {
+    color: #93ff40; /* Green color */
+    font-size: 36px; /* Adjust font size as needed */
+    line-height: 1.2;
+}
+
+/* Style H2 and H3 text in white and adjust font sizes */
+.thanks-page h2,
+.thanks-page h3 {
+    color: white;
+    font-size: 20px; /* Adjust as needed */
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* ================= SKILLS SECTION ================= */
 section.skills {
     padding: 80px 4%;
 }
@@ -250,7 +286,7 @@ section.skills .flex {
     margin: 10px 0 10px;
 }
 
-/* ABOUT SECTION*/
+/* ================= ABOUT SECTION ================= */
 section.about {
     padding: 80px 4%;
 }
@@ -274,9 +310,9 @@ section.about .flex {
     text-align: justify;
 }
 
-/* SOCIAL MEDIA BUTTONS SECTION*/
+/* ================= SOCIAL MEDIA BUTTONS SECTION ================= */
 .btn-social button {
-    background-color: #00ff08;
+    background-color: #93ff40;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -295,7 +331,7 @@ section.about .flex {
 }
 
 
-/* PROJECT SECTION*/
+/* ================= PROJECT SECTION ================= */
 section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.103);
@@ -309,7 +345,7 @@ section.portfolio .flex {
 .img-port {
     width: 360px;
     height: 460px;
-    background-color: #00ff08;
+    background-color: #93ff40;
     background-size: cover;
     background-position: 100% 0%;
     transition: 8s;
@@ -344,7 +380,7 @@ section.portfolio .flex {
     opacity: 1;
 }
 
-/* FORM SECTION*/
+/* ================= FORM SECTION ================= */
 section.form {
     padding: 80px 4%;
 }
@@ -388,22 +424,14 @@ form .btn-send {
 
 form .btn-send input {
     width: 200px;
-    background-color: #00ff08d7;
-    color: black;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-form .btn-send input {
-    width: 200px;
-    background-color: #00ff08;
+    background-color: #93ff40;
     color: black;
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
 }
 
-/* FOOTER SECTION*/
+/* ================= FOOTER SECTION ================= */
 footer {
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.103);
@@ -419,22 +447,25 @@ footer .line-footer {
 }
 
 .border {
-    border-top: 2px solid #00ff08;
+    border-top: 2px solid #93ff40;
 }
 
 footer .line-footer p i {
-    color: #00ff08;
+    color: #93ff40;
     font-size: 22px;
 }
 
-footer .line-footer p a {
-    color: white;
+footer .line-footer p, a {
+    font-size: 12px; 
+    color: whitesmoke; 
+    text-align: center; 
+    margin: 10px 0; 
 }
 
-/* RESPONSIVE SECTION*/
+/* ================= RESPONSIVE SECTION ================= */
 @media screen and (max-width: 1120px) {
 
-    /* GENERAL */
+    /* ============ GENERAL ============ */
     .flex {
         flex-direction: column;
     }
@@ -444,7 +475,7 @@ footer .line-footer p a {
         
     }
 
-    /* HEADER SECTION*/
+    /* ============ HEADER SECTION ============ */
     .menu-desktop, .btn-contact {
         display: none;
     }
@@ -453,7 +484,7 @@ footer .line-footer p a {
         display: block;
     }
 
-    /* BANNER SECTION*/
+    /* ============ BANNER SECTION ============*/
     section.top-site .flex {
         gap: 0px;
     }
@@ -465,7 +496,7 @@ footer .line-footer p a {
     .top-site h1 {
         font-size: 28px;
         line-height: 50px;
-        color: #00ff08;
+        color: #93ff40;
     }
 
     .top-site h2 {
@@ -485,12 +516,12 @@ footer .line-footer p a {
         width: 100%;
     }
 
-    /* SKILLS SECTION*/
+    /* ============ SKILLS SECTION ============ */
     section.skills {
         padding: 20px 8%;
     }
 
-    /* ABOUT SECTION*/
+    /* ============ ABOUT SECTION ============ */
     section.about {
         padding: 40px 8%;
     }
@@ -511,7 +542,7 @@ footer .line-footer p a {
         max-height: 420px;
     }
 
-    /* PROJECT SECTION*/
+    /* ============ PROJECT SECTION ============*/
     section.portfolio {
         padding: 80px 8%;
     }
@@ -522,13 +553,13 @@ footer .line-footer p a {
         margin: 0 auto;
     }
 
-    /* FORM SECTION*/
+    /* ============ FORM SECTION ============ */
     section.form {
         padding: 80px 6%;
     }
     
 
-    /* FOOTER SECTION*/
+    /* ============FOOTER SECTION*/
     footer .flex {
         flex-direction: column;
         gap: 30px;
@@ -539,10 +570,10 @@ footer .line-footer p a {
     }
 
     footer p {
-        font-size: 12px; /* Or 13px, 14px depending on preference */
-        color: whitesmoke; /* A neutral gray color, adjustable to fit your site's theme */
-        text-align: center; /* Center it in the footer for balance */
-        margin: 10px 0; /* Some space around the text */
+        font-size: 12px; 
+        color: whitesmoke; 
+        text-align: center; 
+        margin: 10px 0; 
       }
       
 }

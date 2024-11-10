@@ -13,3 +13,11 @@ menu.addEventListener('click',()=>{
 overlay.addEventListener('click',()=>{
     menu.classList.remove('open-menu')
 })
+
+// Thanks-page Redirection'
+if (document.body.classList.contains('thanks-page')) {
+    // Redirect to the main page after 7 seconds
+    setTimeout(function() {
+        window.location.href = "index.html"; // Change to your main page URL
+    }, 7000); // 7000 milliseconds = 7 seconds
+}
