@@ -14,6 +14,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth; 
+}
+
 body {
     background-color: black;
     height: 100vh;
@@ -62,12 +67,8 @@ header>.interface {
     justify-content: space-between;
 }
 
-/* *********************************************************************
-header>.thanks h1 span {
-    color: #93ff40;
-}
-*/
 header a {
+    font-size: 16px;
     color: rgb(121, 121, 121);
     text-decoration: none;
     display: inline-block;
@@ -310,6 +311,10 @@ section.about .flex {
     text-align: justify;
 }
 
+.about .txt-about a{
+    color: rgba(0, 255, 255, 0.815);
+}
+
 /* ================= SOCIAL MEDIA BUTTONS SECTION ================= */
 .btn-social button {
     background-color: #93ff40;
@@ -433,16 +438,27 @@ form .btn-send input {
 
 /* ================= FOOTER SECTION ================= */
 footer {
-    padding: 40px 4%;
+    padding: 20px;
     box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.103);
 }
 
 footer .flex {
     justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.btn-social-vertical {
+    display: flex;
+    align-items: center; 
+    padding-right: 40px;
+}
+
+.btn-social-vertical a {
+    margin: 10px 0; 
 }
 
 footer .line-footer {
-    padding: 20px 0;
     border-bottom: 2px;
 }
 
@@ -450,17 +466,14 @@ footer .line-footer {
     border-top: 2px solid #93ff40;
 }
 
-footer .line-footer p i {
-    color: #93ff40;
-    font-size: 22px;
-}
-
-footer .line-footer p, a {
+footer .line-footer p {
     font-size: 12px; 
     color: whitesmoke; 
     text-align: center; 
-    margin: 10px 0; 
+    margin: 25px 0px 0px; 
 }
+
+
 
 /* ================= RESPONSIVE SECTION ================= */
 @media screen and (max-width: 1120px) {
@@ -472,7 +485,6 @@ footer .line-footer p, a {
 
     h2.title {
         font-size: 30px;
-        
     }
 
     /* ============ HEADER SECTION ============ */
@@ -557,16 +569,18 @@ footer .line-footer p, a {
     section.form {
         padding: 80px 6%;
     }
-    
 
-    /* ============FOOTER SECTION*/
+    /* ============ FOOTER SECTION ========== */
     footer .flex {
+        display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 30px;
     }
 
     footer .line-footer {
         text-align: center;
+        width: 100%;                 
     }
 
     footer p {
@@ -574,6 +588,6 @@ footer .line-footer p, a {
         color: whitesmoke; 
         text-align: center; 
         margin: 10px 0; 
-      }
+    }
       
 }
