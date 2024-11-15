@@ -1,0 +1,223 @@
+<!-- 
+* Marvin A. Zanchi - Portfolio Web Page
+* Description: This HTML file contains the structure for my personal portfolio website.
+* Sections include: 
+    - Header: Introduction and navigation links.
+    - About Me: A brief biography and background information.
+    - My Skills: Overview of my current technical skills at this stage.
+    - Projects: A showcase of my college web/software development projects.
+    - Contact Info: Ways to get in touch with me.
+* Last Update: 10/Nov/24
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/icon-mazdev-rounded-small.ico">
+    <!-- JavaScrip link-->
+    <script src="script.js" defer></script>
+    <title>Portfolio Marvin A. Zanchi</title>
+</head>
+<body>
+    <!-- Header section: Contains logo, navigation menu, and contact button -->
+    <header>
+        <div class ="interface">
+            <div class="logo">
+                <a href="#"> 
+                    <img src="images/logo-mazdev-square-black-small.png" alt="Logo">
+                </a>
+            </div> <!--end-logo-->
+
+            <!-- Desktop Menu -->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+
+            <!-- Contact Button -->
+            <div class="btn-contact">
+                <a href="#contact">
+                    <button>Contact</button>
+                </a> <!--end-btn-contact-->
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="btn-open-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn-open-menu-->
+
+            <!-- Mobile Menu -->
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-close">
+                    <i class="bi bi-x-lg"></i>
+                </div><!-- end btn-close-->
+
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div><!--End menu-mobile-->
+            
+            <!-- Overlay for Menu -->
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div><!--End overlay-menu-->
+
+        </div> <!--End interface-->
+    </header>
+
+    <!-- Main content section: introduction, about, skills, portfolio, and contact -->
+    <main>
+
+        <!-- Introduction Section -->
+        <section id="home" class="top-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-top-site">
+                        <h2>Hello!!! I am...<br></h2>
+                        <h1>Marvin A<span>.</span> Zanchi</h1>
+                        <h3>WEB <span>|</span> SOFTWARE DEVELOPER</h3>
+                        
+                        <!-- Contact Button -->
+                        <div class="btn-contact">
+                            <a href="#contact">
+                                <button>Get in touch!</button>
+                            </a> <!--End btn-contact-->
+                        </div>
+                    </div><!--End txt-top-site-->
+
+                    <!-- Image Section (Photo) -->
+                    <div class="img-top-site">
+                        <img src="images/MarvinFacePhoto.png" alt="Marvin face photo">
+                    </div><!--End img-top-site-->
+                </div> <!--End flex-->
+            </div> <!--End interface-->
+        </section> <!--End top-site-->
+
+         <!-- About Section -->
+         <section id="about" class="about">
+            <div class="interface">
+                <h2 class="title">ABOUT <span>ME</span></h2>
+                <div class="flex">
+                    <!-- About Image -->
+                    <div class="img-about">
+                        <img src="images/coder.png" alt="Coder">
+                    </div><!--End img-about-->
+
+                    <!-- About Text -->
+                    <div class="txt-about">
+                        <p>I am a highly dedicated software developer student, committed since 2021 to learning both front-end and back-end technologies, with a lifelong passion for understanding how things work from the inside.</p>
+                        <p>Currently in the 3rd year of a Bachelor’s degree (Hons) in Software Development at <a href="https://www.setu.ie/courses/bsc-hons-in-software-development" target="_blank">South East Technological University (SETU)</a> Carlow, and I am actively seeking a 6-8 month internship in 2025, either in Ireland or remotely abroad.</p>
+                        <div class="btn-social">
+                            <a href="mailto:mazds.dev@gmail.com"><button><img src="images/icon-email.png" alt="Contact icon"></button></a>
+                            <a href="https://github.com/mazds-dev"><button><img src="images/icon-github.png" alt="GitHub icon"></button></a>
+                            <a href="https://linkedin.com/in/marvinzanchi"><button><img src="images/icon-linkedin.png" alt="Linkedin icon"></button></a>
+                        </div><!--End btn-social-->
+                    </div><!--End txt-about-->
+                </div><!--End flex-->
+            </div><!--End interface-->
+        </section><!--End about-->
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="interface">
+                <h2 class="title">MY <span>SKILLS</span></h2>
+                <div class="flex">
+                    <div class="skills-box">
+                        <img src="images/icon-front-end.png" alt="Front-end icon" width="70" height="70">
+                        <h3>Front-end</h3>
+                        <p>With strong front-end skills, I learned HTML5 for semantic structure and accessibility, CSS3 for responsive design, and developed a foundational understanding of JavaScript focused on security, efficiency, browser compatibility.</p>
+                    </div><!--End skills-box-->
+
+                    <div class="skills-box">
+                        <img src="images/icon-back-end.png" alt="Back-end icon" width="70" height="70">
+                        <h3>Back-end</h3>
+                        <p>Proficient in Java and Object-Oriented Programming (OOP), I have developed a solid foundation in building efficient, scalable, and maintainable applications by applying inheritance, polymorphism, and encapsulation to write clean and modular code.</p>
+                    </div><!--End skills-box-->
+
+                    <div class="skills-box">
+                        <img src="images/icon-database.png" alt="Database icon" width="70" height="70">
+                        <h3>Database</h3>
+                        <p>Experienced in relational database systems using MySQL, and database design using ER diagrams. I’ve worked with PHPMyAdmin, Plesk, and CLI for administration, focusing on data integrity, query optimization, and scalable, secure solutions.</p>
+                    </div><!--Endskills-box-->
+                </div><!--End flex-->
+            </div><!--End interface-->
+        </section><!-- End skills-->
+
+        <!-- Portfolio Section -->
+        <section id="projects" class="portfolio">
+            <div class="interface">
+                <h2 class="title">MY <span>PROJECTS</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(images/MarvinPortfolioPage1.png);">
+                        <div class="overlay">Front-end<br> HTML5, CSS3<br>JavaScript</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/StudentManagementProjectImage.png);">
+                        <div class="overlay">Back-end<br>Java JCBD<br>MySQL</div>
+                    </div>
+                    <div class="img-port" style="background-image: url(images/image-project-30.png);">
+                        <div class="overlay">Full-stack<br>HTML5, CSS3 <br>JavaScript<br>MySQL</div>
+                    </div>
+                </div><!-- End flex-->
+            </div><!--End interface-->
+        </section><!--End portfolio-->
+
+        <!-- Contact Section -->
+        <section id="contact" class="form">
+            <div class="interface">
+                <h2 class="title">CONTACT <span>ME</span></h2>
+                <form action="https://formsubmit.co/1e6e94329ceef4a59a2e13be877d229c" method="POST">
+                    <input class="input" type="text" id="name" name="name" placeholder="Full name:" autocomplete="off" required>
+                    <input class="input" type="email" id="email" name="email" placeholder="Email:" autocomplete="off"required>
+                    <input class="input" type="text" id="phone" name="phone" value="" placeholder="Phone: (optional)">
+                    <textarea class="input" id="message" name="message" placeholder="Message:" required></textarea>
+                    <input type="hidden" name="_next" value="https://mazds-dev.github.io/MyPortfolio/thanks.html">
+                    <div class="btn-send"><input type="submit" value="SEND"></div>
+                </form>
+            </div><!--End interface-->
+        </section><!--End form-->
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <a href="#home">
+                            <img src="images/logo-mazdev-round-black-small.png" alt="Page Logotype">
+                        </a>
+                    </div><!--End logo-footer-->
+                    <div class="btn-social">
+                        <a href="mailto:mazds.dev@gmail.com"><button><img src="images/icon-email.png" alt="Contact icon"></button></a>
+                        <a href="https://github.com/mazds-dev"><button><img src="images/icon-github.png" alt="GitHub icon"></button></a>
+                        <a href="https://linkedin.com/in/marvinzanchi"><button><img src="images/icon-linkedin.png" alt="Linkedin icon"></button></a>
+                    </div><!--End btn-social-->
+                </div><!--End flex-->
+            </div><!--End line-footer-->
+
+            <div class="line-footer border">
+                <p>© 2024 Marvin A. Zanchi | All rights reserved.</p>
+                
+            </div><!--End line-footer-->
+        </div>
+    </footer><!--End interface-->
+</body>
+</html>
