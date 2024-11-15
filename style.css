@@ -497,6 +497,16 @@ footer .line-footer p {
         display: block;
     }
 
+    .btn-contact {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .btn-contact button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
     /* ============ BANNER SECTION ============*/
     section.top-site .flex {
         gap: 0px;
