@@ -188,14 +188,20 @@
                 <h2 class="title">CONTACT <span>ME</span></h2>
                 <form action="https://formsubmit.co/1e6e94329ceef4a59a2e13be877d229c" method="POST">
                     <input class="input" type="text" id="name" name="name" placeholder="Full name:" autocomplete="off" required>
-                    <input class="input" type="email" id="email" name="email" placeholder="Email:" autocomplete="off"required>
-                    <input class="input" type="text" id="phone" name="phone" value="" placeholder="Phone: (optional)">
+                    <input class="input" type="email" id="email" name="email" placeholder="Email:" autocomplete="off" required>
+                    <input class="input" type="text" id="phone" name="phone" placeholder="Phone: (optional)">
                     <textarea class="input" id="message" name="message" placeholder="Message:" required></textarea>
                     <input type="hidden" name="_next" value="https://mazds-dev.github.io/MyPortfolio/thanks.html">
                     <div class="btn-send"><input type="submit" value="SEND"></div>
                 </form>
+                <div id="submission-feedback" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Submitting your form, please wait...</p>
+                </div>
+                
             </div><!--End interface-->
-        </section><!--End form-->
+        </section>
+        
     </main>
 
     <!-- Footer Section -->

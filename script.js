@@ -25,4 +25,13 @@ overlay.addEventListener('click', () => {
     menu.classList.remove('open-menu');  
 });
 
+// When the Submit button is clicked show message + loader 
+const form = document.querySelector("form");
+const feedback = document.getElementById("submission-feedback");
+
+form.addEventListener("submit", () => {
+    feedback.style.display = "block"; 
+});
+
+
 
