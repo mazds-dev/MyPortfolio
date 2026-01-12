@@ -2,12 +2,15 @@
 
 🧑‍💻 Welcome to my Portfolio! 💻
 
-This site was designed with HTML5, CSS3, and a bit of JavaScript to add interactive elements. It's an evolution of my first portfolio, which I created in 2021 during my initial year in a Web/Software Development course.
+This repository contains the source code for my personal portfolio website, built with **HTML5, CSS3, and a small amount of JavaScript**.
 
-Since then, I've expanded my skills and knowledge significantly. This latest version of my portfolio highlights the following:
+The portfolio was originally created in **2021** and has been **iteratively improved** as I progressed through my BSc (Hons) in Software Development.
 
-    🆕 A fresh layout that reflects my growth as a developer.
-    🛠️ Updated skillset showcasing my current tech stack and projects experience.
-    🚀 Optimizations for responsive design, accessibility, and performance.
+### What this portfolio showcases
+- Selected **academic and personal projects**, including full-stack and data-focused work
+- A clear overview of my **technical skills** at this stage
+- A simple, responsive layout focused on clarity and usability
 
-Feel free to explore, connect, and check out the code!
+The portfolio is intended to demonstrate a **quick overview of my work and progression** as I prepare for **Graduate / Junior Software Developer roles starting in 2026**.
+
+Feel free to explore the site and review the code.
