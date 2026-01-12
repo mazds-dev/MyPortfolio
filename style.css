@@ -320,46 +320,103 @@ section.portfolio {
 }
 
 section.portfolio .flex {
-    gap: 70px;
-    margin: 100px 0px 100px;
+    gap: 40px;
+    margin: 60px 0;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.img-port {
+.project-item {
     width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-item .img-port {
+    width: 100%;
     height: 460px;
-    background-color: #93ff40;
+    background-color: #1a1a1a;
     background-size: cover;
-    background-position: 100% 0%;
-    transition: 8s;
+    background-position: center top;
+    transition: all 0.3s ease;
     cursor: pointer;
     border-radius: 25px;
     position: relative;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
 }
 
-.img-port:hover {
-    background-position: 100% 100%;
+.project-item .img-port:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(147, 255, 64, 0.3);
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #0000007c;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: 600;
+.project-caption {
+    color: white;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.project-caption strong {
     color: #93ff40;
-    opacity: 0;
-    transition: .5s;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 40px;
 }
 
-.overlay:hover {
-    opacity: 1;
+.project-caption a {
+    color: #93ff40;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.project-caption a:hover {
+    color: #b4ff70;
+    transform: translateX(5px);
+}
+
+/* Technology tags */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+.tech-tag {
+    background-color: rgba(147, 255, 64, 0.1);
+    color: #93ff40;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    border: 1px solid rgba(147, 255, 64, 0.3);
+}
+
+/* ================= RESPONSIVE FOR PROJECTS ================= */
+@media screen and (max-width: 1120px) {
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    .project-item {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .project-item .img-port {
+        height: 400px;
+    }
+
+    section.portfolio .flex {
+        gap: 50px;
+    }
 }
 
 /* ================= FORM SECTION ================= */
