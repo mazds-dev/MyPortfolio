@@ -185,7 +185,7 @@ section.top-site .flex {
 
 .top-site h1 {
     color: #93ff40;
-    font-size: 42px;
+    font-size: 36px;
     line-height: 60px;
 }
 
@@ -312,6 +312,31 @@ section.skills .flex {
     transform: scale(1.05);
 }
 
+.btn-cv {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-cv button {
+    padding: 11px 34px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #93ff40;
+    border: 1px solid #93ff40;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    letter-spacing: 0.5px;
+}
+
+.btn-cv button:hover {
+    background-color: #93ff40;
+    color: black;
+    box-shadow: 0px 0px 8px #5aaa20;
+    transform: scale(1.05);
+}
 
 /* ================= PROJECT SECTION ================= */
 section.portfolio {
@@ -346,6 +371,8 @@ section.portfolio .flex {
     display: block;
     text-decoration: none;
     overflow: hidden;
+    border: 1.5px solid rgba(147, 255, 64, 0.15);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.04);
 }
 
 .project-item .img-port:hover {
@@ -363,11 +390,22 @@ section.portfolio .flex {
     color: #93ff40;
     font-size: 22px;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
+}
+
+.project-award {
+    color: #93ff40;
+    background-color: rgba(147, 255, 64, 0.08);
+    border-left: 3px solid #93ff40;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: -10px 0 25px;
 }
 
 .project-caption a {
-    color: #93ff40;
+    color: rgba(0, 255, 255, 0.815);
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
@@ -377,7 +415,7 @@ section.portfolio .flex {
 }
 
 .project-caption a:hover {
-    color: #b4ff70;
+    color: rgb(123, 251, 255);
     transform: translateX(5px);
 }
 
@@ -644,6 +682,10 @@ footer .line-footer p {
     .about .img-about img {
         max-height: 420px;
     }
+
+    .about .btn-cv {
+    justify-content: center;
+}
 
     /* ============ PROJECT SECTION ============*/
     section.portfolio {
