@@ -1,8 +1,6 @@
 /* 
-* Marvin A. Zanchi - Portfolio
-* Description: This JavaScript file contains the interactive functionality 
-* Features: Mobile menu toggle
-* Last Update: 10/Nov/24
+* Marvin Adorian Zanchi Santos - Portfolio Scripts
+* Description: Handles interactive functionalities
 */
 
 // Get the menu toggle button, mobile menu, and overlay elements
